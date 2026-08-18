@@ -1,5 +1,9 @@
 from tkinter import *
-import requests  # Required to fetch API data
+import openmeteo_requests
+
+import pandas as pd
+import requests_cache
+from retry_requests import retry
 
 # 1. Function to pull data from the Weather API
 def fetch_weather():
@@ -34,7 +38,7 @@ root.geometry("600x600")
 bg = PhotoImage(file="BackgroundForGui.png") 
 
 # Create Canvas
-canvas1 = Canvas(root, width=400, height=400)
+canvas1 = Canvas(root, width=600, height=600)
 # 'both' and 'nw' must be uppercase strings ("both", "nw") or Tkinter constants (BOTH, NW)
 canvas1.pack(fill=BOTH, expand=True) 
 
