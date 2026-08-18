@@ -42,10 +42,10 @@ canvas1.pack(fill=BOTH, expand=True)
 canvas1.create_image(0, 0, image=bg, anchor=NW) 
 
 # Add Static Text
-canvas1.create_text(200, 200, text="Welcome to the World of Coding", font=("Arial", 16, "bold"), fill="white")
+canvas1.create_text(200, 200, text="Welcome to the World of Coding", font=("Arial", 16, "bold"), fill="black")
 
 # Add Dynamic Weather Text (saved as a variable to update later)
-weather_display = canvas1.create_text(200, 280, text="Fetching weather...", font=("Arial", 14), fill="white")
+weather_display = canvas1.create_text(200, 280, text="Fetching weather...", font=("Arial", 14), fill="black")
 
 # Call the weather function after the GUI initializes
 root.after(1000, fetch_weather)
