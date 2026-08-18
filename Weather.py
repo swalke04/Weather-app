@@ -25,7 +25,7 @@ def fetch_weather():
 
 # Create object
 root = Tk()
-root.title("Weather GUI Application")
+root.title("Sophia's Weather App")
 
 # Adjust size (must be a valid string format)
 root.geometry("600x600") 
